@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Goods | Muhammed Salama</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div class="crud">
+        <div class="head">
+            <h2>CRUD</h2>
+            <p>PRODUCT MANAGEMENT SYSTEM</p>
+        </div>
+        <div class="inputs">
+            <input type="text" id="title" placeholder="Title">
+            <div class="price">
+                <input onkeyup="getTotal()" type="number" id="price" placeholder="Price">
+                <input onkeyup="getTotal()" type="number" id="taxas" placeholder="Taxas">
+                <input onkeyup="getTotal()" type="number" id="ads" placeholder="Ads">
+                <input onkeyup="getTotal()" type="number" id="discount" placeholder="Discount">
+                <small id="total">2323</small>
+            </div>
+            <input type="number" id="count" placeholder="Count">
+            <input type="text" id="category" placeholder="Category">
+            <button type="submit" id="submit">Create</button>
+        </div>
+        <div class="outputs">
+            <div class="searchBlock">
+                <input onkeyup="searchData(this.value)" type="text" id="search" placeholder="Search">
+                <div class="btnSearch">
+                    <button onclick="getSearchMood(this.id)" id="searchTitle">Search By Title</button>
+                    <button onclick="getSearchMood(this.id)" id="searchCategory">Search By Category</button>
+                </div>
+                <div id="deleteAll">
+                    
+                </div>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Taxas</th>
+                        <th>Ads</th>
+                        <th>Discount</th>
+                        <th>Total</th>
+                        <th>Category</th>
+                        <th>Update</th>
+                        <th>Delete</th>
+                    </tr>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    
+
+    <script src="src/js/main.js"></script>
+</body>
+</html>
